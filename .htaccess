@@ -1,0 +1,17 @@
+RewriteEngine On
+## ## Internal Redirect
+
+## opção do video
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html
+## opção do 1 html
+RewriteRule ^([0-9A-Za-z-_]+)$ /$1.html
+## opção do 2 html
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+## opção do 3 html
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,NC]
+## opção do para php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

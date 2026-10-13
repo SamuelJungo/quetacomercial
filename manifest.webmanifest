@@ -1,0 +1,18 @@
+{
+    "short_name": "Loja Epalinho",
+    "name": "Loja da Epalinho | Equipamentos individuais",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "theme-color": "#ffffff",
+    "background_color": "#000000",
+    "background-color": "#000000",
+    "description": "Loja da Epalinho | Equipamentos individuais",
+    "icons": [
+        {
+            "src": "./assets/img/icone.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        }
+    ]
+}
